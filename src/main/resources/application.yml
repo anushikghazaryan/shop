@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/shop
+    username: root
+    password: 1111
+  jpa:
+    hibernate:
+      ddl-auto: update
+    sql-show: true
+
+application:
+  jwt:
+    secretKey: "secretKeysecretKeysecretKeysecretKeysecretKeysecretKeysecretKeysecretKeysecretKey"
+    tokenPrefix: "Bearer "
+    tokenExpirationAfterDays: 10
